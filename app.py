@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Cargar el modelo de entrenamiento
 try:
-    model = joblib.load('modelo.pkl')
+    model = joblib.load('model.pkl')
     app.logger.debug("Modelo cargado exitosamente.")
 except Exception as e:
     app.logger.error(f"No se pudo cargar el modelo: {str(e)}")
